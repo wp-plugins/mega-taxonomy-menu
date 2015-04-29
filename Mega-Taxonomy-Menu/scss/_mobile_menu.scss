@@ -1,0 +1,91 @@
+.mtm-mobile-menu {
+	overflow: auto;
+	width: 165px;
+	height: 100%;
+	float: left;
+	display: none;
+	background-color: $primary-color;
+	
+	a {
+		color: $text-color;
+	}
+	.social-icons {
+		a {
+			font-size: 20px;
+			float: left;
+			
+			padding: 10px;
+			border-bottom: none;
+		}
+	}
+	.icon-spinner, .icon-arrow-right, .see-all {
+		display: none;
+	}
+	.navbar-brand {
+		padding: 10px 0;
+		text-align: center;
+		display: block;
+		img {
+			max-width: 150px;
+			height: auto;
+		}
+	}
+	&.fixed-display {
+		position: fixed;
+		left:0;
+		top: 0;
+		z-index: -1;
+		display: block;
+	}
+	
+
+	ul {
+	  margin: 0;
+	  padding: 0;
+	  width: inherit;
+	}
+	li {
+		list-style-type: none;
+		margin: 0;
+		position: relative;
+	
+		a {
+			border-bottom: solid 1px $secondary-color;
+
+			
+			font-size: 14px;
+			font-family: arial;
+			text-decoration: none;
+
+			display: block;
+			padding: 10px 0px 10px 10px;
+			
+
+		}
+	}
+	
+	.sub-menu {
+		display: none;
+		background-color: $secondary-color;
+		a {
+			padding-left: 25px;
+			color: $primary-color;
+			border-bottom: solid 1px $primary-color;
+			&:hover {
+				background-color: $tertiary-color;				
+			}
+		}
+	}
+
+	ul li a:hover, ul li a:active {
+	  background-color: $secondary-color;
+	  color: $primary-color;
+	}
+	
+	.icon-arrow-down {
+		position: absolute;
+		right: 15px;
+		top: 18px;
+		z-index: 300
+	}
+}
